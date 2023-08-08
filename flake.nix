@@ -29,7 +29,7 @@
     darwinConfigurations = rec {
       mark-one = darwinSystem {
         system = "aarch64-darwin";
-        modules = attrValues self.darwinModules ++ [ 
+        modules = [
           # Main `nix-darwin` config
           ./configuration.nix
           # `home-manager` module
@@ -48,11 +48,6 @@
     # Overlays --------------------------------------------------------------- {{{
 
     overlays = {
-      # Overlays to add various packages into package set
-        comma = final: prev: {
-          comma = import inputs.comma { inherit (prev) pkgs; };
-        };  
-
       # Overlay useful on Macs with Apple Silicon
         apple-silicon = final: prev: optionalAttrs (prev.stdenv.system == "aarch64-darwin") {
           # Add access to x86 packages system is running Apple Silicon
@@ -60,10 +55,6 @@
             system = "x86_64-darwin";
             inherit (nixpkgsConfig) config;
           };
-
-          # Get Apple Silicon version of `kitty`
-          # TODO: Remove when https://github.com/NixOS/nixpkgs/pull/137512 lands
-          inherit (inputs.nixpkgs-with-patched-kitty.legacyPackages.aarch64-darwin) kitty;
         }; 
       };
  };
