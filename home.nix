@@ -4,5 +4,6 @@
   home.packages = [
     pkgs.jq
     pkgs.htop
+    pkgs.ledger
   ];
 }
