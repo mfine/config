@@ -5,5 +5,7 @@
     pkgs.jq
     pkgs.htop
     pkgs.ledger
+    pkgs.direnv
+    pkgs.nix-direnv
   ];
 }
