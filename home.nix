@@ -13,8 +13,8 @@
     pkgs.gopls
     pkgs.tree
   ];
-  home.file.".screenrc".source = ./screenrc;
-  home.file.".spacemacs".source = ./spacemacs;
-  home.file.".gitconfig".source = ./gitconfig;
-  home.file.".zshrc".source = ./zshrc;
+  home.file.".screenrc".source = ./files/screenrc;
+  home.file.".spacemacs".source = ./files/spacemacs;
+  home.file.".gitconfig".source = ./files/gitconfig;
+  home.file.".zshrc".source = ./files/zshrc;
 }
