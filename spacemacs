@@ -42,15 +42,22 @@ This function should only modify configuration layer settings."
      ;; better-defaults
      emacs-lisp
      finance
-     ;; git
+     git
      ;; helm
      lsp
      markdown
      multiple-cursors
+     python
+     shell-scripts
+     yaml
+     sql
+     terraform
+     go
+     rust
      org
      nixos
      ;; spell-checking
-     ;; syntax-checking
+     syntax-checking
      ;; version-control
      treemacs)
 
