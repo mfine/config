@@ -10,7 +10,7 @@
   };
 
   outputs = { self, nixpkgs, home-manager, darwin }: {
-    darwinConfigurations.seville = darwin.lib.darwinSystem {
+    darwinConfigurations.seville = darwin.lib.darwinSystem { # CHANGE seville
       system = "aarch64-darwin";
       modules = [
         home-manager.darwinModules.home-manager
