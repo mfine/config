@@ -104,10 +104,8 @@ cdpath=(~/repos)
 
 alias e='emacsclient -n'
 
-alias tailf='tail -f'
-
-alias rac='ledger --no-pager -f ~/repos/ledger/checking.ledger register assets'
-alias ras='ledger --no-pager -f ~/repos/ledger/savings.ledger register assets'
+alias ledger-checking='ledger --no-pager -f ~/repos/ledger/checking.ledger register assets'
+alias ledger-savings='ledger --no-pager -f ~/repos/ledger/savings.ledger register assets'
 
 alias nix-rebuild='( cd $HOME/.config && nix build .#darwinConfigurations.seville.system && ./result/sw/bin/darwin-rebuild switch --flake . )'
 alias nix-gc='nix-env --delete-generations old && nix-store --gc && nix-collect-garbage -d'
