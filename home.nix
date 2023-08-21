@@ -7,5 +7,10 @@
     pkgs.ledger
     pkgs.direnv
     pkgs.nix-direnv
+    pkgs.silver-searcher
+    pkgs.go_1_20
+    pkgs.golangci-lint
+    pkgs.gopls
+    pkgs.tree
   ];
 }
