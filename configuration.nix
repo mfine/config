@@ -11,6 +11,7 @@
     onActivation.autoUpdate = true;
     casks = [
       "emacs"
+      "docker"
     ];
   };
 }

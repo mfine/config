@@ -12,6 +12,11 @@
     pkgs.golangci-lint
     pkgs.gopls
     pkgs.tree
+    pkgs.kind
+    pkgs.kubectl
+    pkgs.kubectx
+    pkgs.kustomize
+    pkgs.kubebuilder
   ];
   home.file.".screenrc".source = ./files/screenrc;
   home.file.".spacemacs".source = ./files/spacemacs;
